@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>TeamBridge Prototype (PWA)</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#88cc88" />
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js');
+      });
+    }
+  </script>
+  <style>
+    /* 你原有的 CSS 維持不變，省略於此 */
+  </style>
+</head>
+<body>
+  <!-- 你原有的 HTML 結構與內容也維持不變，省略於此 -->
+</body>
+</html>
